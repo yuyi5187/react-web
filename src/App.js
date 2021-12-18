@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import Movie from "./components/Movie";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,8 +12,8 @@ function App() {
 
   return (<Router>
     <Routes>
-      <Route path={`${process.env.PUBLIC_URL}/`} element={<Home/>}/>
-      <Route path={`${process.env.PUBLIC_URL}/movie/:id`} element={<Detail/>}/>
+      <Route path="/react-for-beginners" element={<Home/>}/>
+      <Route path="/movie/:id" element={<Detail/>}/>
     </Routes>
   </Router>
   );
